@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tic Tac Toe</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+</head>
+<body>
+<header class="py-3 bg-light">
+	<h1 class="text-center"><b><span class="text-danger">Tic</span> <span class="text-warning">Tac</span> <span
+			class="text-success">Toe</span></b></h1>
+</header>
+<main class="py-5">
+	<section class="main-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-3 ttt-main-start-container">
+					<button class="btn btn-lg btn-info w-100 ttt-start-game-btn">Start</button>
+				</div>
+				<div class="col-3 ttt-main-choose-game-container d-none">
+					<form>
+						<div class="row">
+							<div class="col-12 mb-5">
+								<h2 class="text-center"><b>Choose a symbol</b></h2>
+							</div>
+							<div class="col-12 mb-5">
+								<div class="row justify-content-center">
+									<div class="col-3 text-center">
+										<input type="radio" class="btn-check" name="options" id="x" autocomplete="off" required>
+										<label class="btn btn-outline-success" for="x">
+											<i class="fa fa-times" aria-hidden="true"></i>
+										</label>
+									</div>
+									<div class="col-3 text-center">
+										<input type="radio" class="btn-check" name="options" id="o" autocomplete="off" required>
+										<label class="btn btn-outline-danger" for="o">
+											<i class="fa fa-circle-o" aria-hidden="true"></i>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="input-group input-group-lg">
+									<input class="form-control border-secondary" type="text"
+										   placeholder="Enter your name"
+										   required>
+									<button class="btn btn-secondary ttt-btn-submit">GO</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="game-section d-none"></section>
+	<section class="results-section d-none"></section>
+</main>
+<footer></footer>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js "></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+		integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+		crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
